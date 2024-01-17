@@ -681,23 +681,86 @@ section{
         user-select: none;
     }
 }
-.footer{
-    text-align: center;
-
-    .links .btn{
-        margin: .5rem;
-    }
-    .credit{
-        font-size: 2rem;
-        margin-top: 2rem;
-        padding-top: 1rem;
-
-        span{
-            color: var(--yellow);
-        }
-    }
+.container{
+    max-width: 1170px;
+    margin: auto;
+    text-transform: capitalize;
 }
-
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background: var(--light-color);
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: var(--white);
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: var(--yellow);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 15px;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all .3s ease;
+}
+.footer-col ul li a:hover{
+    color: var(--yellow);
+    padding: 5px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: var(--bg-color);
+    margin-right: 10px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--yellow);
+    transition: all .5s ease;
+}
+.footer-col .social-links a:hover{
+    color: var(--white);
+    background: var(--yellow);
+    
+}
+.footer-col .social-links a i{
+    font-size: 1.5rem;
+    align-items: center;
+}
+.footer-col .credit p{
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+    color: #bbbbbb;
+}
 /* break points*/
 @media(max-width: 1024px){
     .header{
@@ -793,9 +856,18 @@ section{
     .projects .box-container{
         grid-template-columns: repeat(1,1fr);
     }
+    .footer-col{
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
 }
 @media(max-width:450px){
     html{
         font-size: 50%;
+    }
+    .footer-col{
+        width: 100%;
+        margin-bottom: 30px;
     }
 }

@@ -77,6 +77,9 @@
             <a href="#" class='bx bxl-twitter'></a>
             <a href="#" class='bx bxl-instagram-alt'></a>
             <a href="#" class='bx bxl-facebook'></a>
+            <a href="#" class='bx bxl-youtube'></a>
+            <a href="#" class='bx bxl-blogger'></a>
+            <a href="#" class='bx bx-rss'></a>
         </div>
     </div>
     <!-- home section design -->
@@ -554,16 +557,65 @@
 </section>
 <!-- footer section starts -->
 <section class="footer">
-        <div class="links">
-            <a class="btn" href="#home" class="active">Home</a>
-            <a class="btn" href="#about">About</a>
-            <a class="btn" href="#services">Services</a>
-            <a class="btn" href="#projects">Projects</a>
-            <a class="btn" href="#pricing">Pricing</a>
-            <a class="btn" href="#contact">Contact</a>
-            <a class="btn" href="#blogs">Blog</a>
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about webuild</a></li>
+                    <li><a href="#">webuild credit cards</a></li>
+                    <li><a href="#">gift cards</a></li>
+                    <li><a href="#">careers</a></li>
+                    <li><a href="#">privacy & notice</a></li>
+                    <li><a href="#">terms</a></li>
+                    <li><a href="#">cookie policy</a></li>
+                    <li><a href="#">mobile apps</a></li>
+                    <li><a href="#">copyright & trademark</a></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>business services</h4>
+                <ul>
+                    <li><a href="#">for professionals</a></li>
+                    <li><a href="#">remodeling software</a></li>
+                    <li><a href="#">floor planner</a></li>
+                    <li><a href="#">contractor leads</a></li>
+                    <li><a href="#">for brands</a></li>
+                    <li><a href="#">trade program</a></li>
+                    <li><a href="#">buttons & badges</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping & delivery</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                    <li><a href="#">return policy</a></li>
+                    <li><a href="#">review professionals</a></li>
+                    <li><a href="#">suggested professionals</a></li>
+                    <li><a href="#">accessibility</a></li>
+                    <li><a href="#">webuild support</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>connect with us</h4>
+                <div class="social-links">
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                    <a href="#"><i class='bx bxl-blogger'></i></a>
+                    <a href="#"><i class='bx bx-rss'></i></a>
+                </div>
+                <div class="credit">
+                    <p>&#169;<span id="year"></span> webuid inc.</p>
+                </div>
+            </div>
         </div>
-        <div class="credit">created by <span>vianny @desishub</span> | all rights reserved!</div>
+    </div>    
 </section>
 <!--scroll reveal-->
 <script src="https://unpkg.com/scrollreveal"></script>
@@ -576,6 +628,10 @@
 <script src="script.js"></script>
 <script>
     lightGallery(document.querySelector('.projects .box-container'));
-</script>   
+</script> 
+  <!--auto year js  -->
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>
